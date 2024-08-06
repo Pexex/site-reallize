@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reallize Clínica Odontológica - Cuidando do Seu Sorriso</title>
+    <meta name="description" content="Conheça a Reallize Clínica Odontológica e descubra nossos tratamentos de ponta, equipe qualificada e atendimento humanizado. Agende sua consulta em nossa clínica moderna e equipada.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/form-styles.css">
+    <script src="./js/animations.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/whatsappForm.js" defer></script>
+    <script src="https://kit.fontawesome.com/a6bdc38953.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Reallize">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="menu-btn" href="index.html">Home</a></li>
+                <li><a class="menu-btn" href="sobre.html">Sobre Nós</a></li>
+                <li><a class="menu-btn" href="servicos.html">Serviços</a></li>
+                <li><a class="menu-btn" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <label class="hamburger-menu">
+            <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav-links">
+                    <li><a class="side-btn" href="index.html">Home</a></li>
+                    <li><a class="side-btn" href="sobre.html">Sobre Nós</a></li>
+                    <li><a class="side-btn" href="servicos.html">Serviços</a></li>
+                    <li><a class="side-btn" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    
+    <main>
+        <section class="introduction relative container">
+            <div class="content">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="./images/servicos-sm.png">
+                    <source media="(max-width: 820px)" srcset="./images/servicos-md.png">
+                    <img src="images/servicos_clinica_moderno.webp" alt="Ambiente moderno e acolhedor de uma clínica odontológica, com área de recepção estilosa e equipamentos dentários avançados. A imagem transmite um ambiente profissional e amigável, com foco na tecnologia de ponta e no atendimento de alta qualidade.">
+                </picture>
+                <div class="text">
+                    <h3>Na Reallize, acreditamos que um sorriso saudável é essencial para a qualidade de vida.</h3>
+                    <h2>Venha Realizar seu sonho conosco!</h2>
+                    <a href="https://api.whatsapp.com/send?phone=5516997260888&text=Gostaria%20de%20agendar%20uma%20avaliação." target="_blank"><button class="agende-button">Agende Agora!</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section container">
+            <div class="section-text">
+                <h2>A Reallize Centro Odontológico</h2>
+                <p>Na <strong>Reallize Clínica Odontológica</strong>, nossa missão é oferecer tratamentos odontológicos de alta qualidade e uma experiência excepcional para todos os pacientes. Combinamos tecnologia de ponta com um atendimento humanizado para transformar sorrisos e melhorar a saúde bucal.</p>
+            </div>
+            <div class="form-container">
+                <form action="#">
+                    <div class="form-row">
+                      <div class="input-data">
+                        <input type="text" name="nome" id="nome" class="form-style" required>
+                        <div class="underline"></div>
+                        <label for="">Nome</label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="tel" name="telefone" id="telefone" class="form-style" required>
+                            <div class="underline"></div>
+                            <label for="">Telefone</label>
+                         </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="email" name="email" id="email" class="form-style" required>
+                            <div class="underline"></div>
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+                   <div class="form-row">
+                   <div class="input-data textarea">
+                      <textarea rows="8" cols="80" id="msg" name="Mensagem"></textarea>
+                      <br />
+                      <div class="underline"></div>
+                      <label for="msg">Digite Sua Mensagem</label>
+                      <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <button type="submit" id="send-btn"><i class="fa fa-whatsapp"></i><span>Enviar dados p/ Whatsapp</span>
+                            </button>
+                        </div>
+                      </div>
+                </form>
+                </div>
+        </section>
+        
+        <div class="whatsapp-float">
+            <a href="https://api.whatsapp.com/send?phone=5516997260888&text=Gostaria%20de%20agendar%20uma%20avaliação." class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footer-links"> 
+            <ul class="page-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <ul class="social-media">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+            <ul class="contact">
+                <li><em><strong>Telefone:</strong></em> (XX) XXXX-XXXX</li>
+                <li><em><strong>Celular:</strong></em> (16) 99726-0888</li>
+                <li><a href="mailto:contato@reallizeco.com.br?subject=Contato%20do%20site"><em><strong>E-mail:</strong></em> contato@reallizeco.com.br</a></li>
+                <li><em><strong>Endereço:</strong></em> Rua Manoel Marques, 200, Centro, Vista Alegre do Alto-SP</li>
+            </ul>
+        </div>
+        <div class="social-logo">
+            <ul>
+                <li><em><strong>Horário de Funcionamento:</strong></em></li>
+                <li><em><strong>Segunda a Sexta:</strong></em> 09:00h às 18:30h</li>
+                <li><em><strong>Sábado:</strong></em> 09:00h à 12:00h</li>
+            </ul>
+            <img src="./images/logo.png" alt="Logotipo da Reallize, compreendendo um ícone no formato de um dente estilizado formando a letra R e o texto escrito Reallize em letras minúsculas com uma fonte pesada e centro odontológico escrito logo abaixo do nome com uma fonte fina e com um expaçamento maior">
+        </div>
+    </footer>
+</body>
+</html>
