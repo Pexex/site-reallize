@@ -387,7 +387,7 @@ nav .sidebar-nav-links li a:hover::after{
 
 .services, .services2 {
     width: 100%;
-    height: 80dvh;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -395,7 +395,7 @@ nav .sidebar-nav-links li a:hover::after{
 }
 
 .services2 {
-    height: calc(100dvh + 10rem);
+    margin-top: 7.5rem;
 }
 
 .vision {
@@ -637,9 +637,9 @@ footer ul li a:hover {
         margin-top: 10rem;
     }
 
-    .services {
+    /* .services {
         height: 55dvh;
-    }
+    } */
 }
 
 @media (max-width: 820px) {
@@ -664,9 +664,9 @@ footer ul li a:hover {
         margin-top: 3rem;
     }
    
-    .services2 {
+    /* .services2 {
         height: 70dvh;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -702,13 +702,13 @@ footer ul li a:hover {
         grid-template-areas: "about-text about-text" "about-picture about-picture";
     }
 
-    .services {
+    /* .services {
     height: 55dvh;
     }
    
     .services2 {
     height: 96dvh;
-    }
+    } */
 
     .member-container {
         flex-direction: column;
@@ -753,13 +753,13 @@ footer ul li a:hover {
         margin-top: 3rem; 
     }
 
-    .services {
+    /* .services {
         height: 65dvh;
     }
 
     .services2 {
         height: calc(100dvh + 12rem);
-    }
+    } */
     
 }
 
