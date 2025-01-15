@@ -467,7 +467,7 @@ nav .sidebar-nav-links li a:hover::after{
 .caroussel {
     width: 100%;
     padding: 1rem;
-    height: 100%;
+    height: max-content;
 }
 
 .cards-container[data-animated=true]{
@@ -478,6 +478,7 @@ nav .sidebar-nav-links li a:hover::after{
 .cards-container[data-animated=true] .caroussel {
     display: flex;
     width: max-content;
+    height: max-content;
     animation: scroll-horizontal 30s linear infinite;
     flex-wrap: nowrap;
     gap: 2.5rem;
@@ -664,9 +665,9 @@ footer ul li a:hover {
         margin-top: 3rem;
     }
    
-    /* .services2 {
+    .services, .services2 {
         height: 70dvh;
-    } */
+    }
 }
 
 @media (max-width: 480px) {
@@ -702,14 +703,18 @@ footer ul li a:hover {
         grid-template-areas: "about-text about-text" "about-picture about-picture";
     }
 
-    /* .services {
-    height: 55dvh;
-    }
-   
-    .services2 {
-    height: 96dvh;
-    } */
+    .services, .services2 {
+    min-height: min-content;
+    max-height: fit-content;
 
+    }
+
+    .cards-container{
+        padding: 0;
+        height: fit-content;
+    }
+
+   
     .member-container {
         flex-direction: column;
     }
@@ -753,14 +758,16 @@ footer ul li a:hover {
         margin-top: 3rem; 
     }
 
-    /* .services {
-        height: 65dvh;
-    }
-
-    .services2 {
-        height: calc(100dvh + 12rem);
-    } */
+    .services, .services2 {
+        min-height: min-content;
+        max-height: fit-content;
     
+        }
+    
+    .cards-container{
+        padding: 0;
+        height: fit-content;
+    }    
 }
 
 @media (max-width: 394px) {
@@ -773,13 +780,16 @@ footer ul li a:hover {
         margin-top: 6rem; 
     }
 
-    .services {
-        height: 70dvh;
-    }
-
-    .services2 {
-        height: calc(100dvh + 28rem);
-    }    
+    .services, .services2 {
+        min-height: min-content;
+        max-height: fit-content;
+    
+        }
+    
+    .cards-container{
+        padding: 0;
+        height: fit-content;
+    }   
 }
 
 
